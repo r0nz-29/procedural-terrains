@@ -16,6 +16,7 @@ demo : https://terrain-heightmap.herokuapp.com/
 demo : https://terrain-noise.herokuapp.com/
 
 ### Terrain which are Flat Shaded (Lambertian shading with custon Fragment Shader)
+demo : https://terrain-flatshaded.herokuapp.com/
 
 ### Terrain which are Smooth Shaded (Gourad and Blinn shading with custom Flat Shader)
 demo : https://terrain-heightmap.herokuapp.com/
