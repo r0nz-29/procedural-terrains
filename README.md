@@ -13,6 +13,7 @@ All these terrains are generated manually by altering the vertices and materials
 demo : https://terrain-heightmap.herokuapp.com/
 
 ### Terrain generated with noise functions 
+demo : https://terrain-noise.herokuapp.com/
 
 ### Terrain which are Flat Shaded (Lambertian shading with custon Fragment Shader)
 
