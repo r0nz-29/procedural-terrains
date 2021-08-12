@@ -3,6 +3,8 @@
 Terrains developed using three.js and GLSL Shaders. There are multiple terrain configurations stored in the `src/World` folder.
 Whole web application runs on React.js and is bootstrapped with `create-react-app`.
 
+**Note :- The three.js code executes from a `World` class inside the react app, so it is portable and can be used with any library / framework**
+
 ## Some Terrains in this repo 
 
 ### Terrain generated with heightmaps using glsl vertex shaders.
