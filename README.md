@@ -22,3 +22,4 @@ demo : https://terrain-flatshaded.herokuapp.com/
 demo : https://terrain-heightmap.herokuapp.com/
 
 ### Smooth shaded Terrain built by modifying three's default materials (using onBeforeCompile() method)
+demo : https://terrain-smoothshaded-obc.herokuapp.com/
