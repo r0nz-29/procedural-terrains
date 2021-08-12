@@ -10,12 +10,13 @@ Whole web application runs on React.js and is bootstrapped with `create-react-ap
 All these terrains are generated manually by altering the vertices and materials of a `Plane Mesh`, instead of pre-built objects imported from blender. 
 
 ### Terrain generated with heightmaps using glsl vertex shaders.
-demo : (https://terrain-heightmap.herokuapp.com/)
+demo : https://terrain-heightmap.herokuapp.com/
 
 ### Terrain generated with noise functions 
 
 ### Terrain which are Flat Shaded (Lambertian shading with custon Fragment Shader)
 
-### Terrain which are Smooth Shaded (Gourad and Blinn shading with custon Flat Shader)
+### Terrain which are Smooth Shaded (Gourad and Blinn shading with custom Flat Shader)
+demo : https://terrain-heightmap.herokuapp.com/
 
 ### Smooth shaded Terrain built by modifying three's default materials (using onBeforeCompile() method)
