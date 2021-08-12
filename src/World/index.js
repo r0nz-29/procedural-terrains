@@ -2,7 +2,6 @@ import * as THREE from "three";
 import { createScene } from "./scene";
 import { createCamera } from "./camera";
 import { createRenderer } from "./renderer";
-import { createLights } from "./lights";
 import { resizer } from "./resizer";
 import { Loop } from "./Loop";
 import { createTerrainFBM } from "./terrain_onBeforeCompile";
