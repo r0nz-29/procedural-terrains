@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+}
+
+#root {
+  /* border: 5px solid red; */
+  height: 100vh;
+  /* background-color: rgb(228, 194, 194); */
+  background-color: black;
+}
