@@ -31,9 +31,9 @@ class World {
     this._scene.add(land, sky, alight);
 
     const sLight = {
-      x: 0,
+      x: 0.1,
       y: 2,
-      z: -2,
+      z: 0.1,
       intensity: 10,
       color: 0x87532c,
     };
@@ -42,7 +42,7 @@ class World {
     spotLight.position.set(sLight.x, sLight.y, sLight.z);
     spotLight.target = land;
     this._scene.add(spotLight);
-    const helper = new THREE.SpotLightHelper(spotLight);
+    let helper = new THREE.SpotLightHelper(spotLight);
     this._scene.add(helper);
 
     const gui = new GUI();
@@ -55,18 +55,41 @@ class World {
     spLight.add(sLight, "x", -10, 10).onChange(() => {
       spotLight.intensity = sLight.intensity;
       spotLight.position.set(sLight.x, sLight.y, sLight.z);
+      spotLight.target = land;
+
+      this._scene.remove(helper);
+      helper = new THREE.SpotLightHelper(spotLight);
+      this._scene.add(helper);
     });
+
     spLight.add(sLight, "y", -10, 10).onChange(() => {
       spotLight.intensity = sLight.intensity;
       spotLight.position.set(sLight.x, sLight.y, sLight.z);
+      spotLight.target = land;
+
+      this._scene.remove(helper);
+      helper = new THREE.SpotLightHelper(spotLight);
+      this._scene.add(helper);
     });
+
     spLight.add(sLight, "z", -10, 10).onChange(() => {
       spotLight.intensity = sLight.intensity;
       spotLight.position.set(sLight.x, sLight.y, sLight.z);
+      spotLight.target = land;
+
+      this._scene.remove(helper);
+      helper = new THREE.SpotLightHelper(spotLight);
+      this._scene.add(helper);
     });
+
     spLight.add(sLight, "intensity", 0, 10).onChange(() => {
       spotLight.intensity = sLight.intensity;
       spotLight.position.set(sLight.x, sLight.y, sLight.z);
+      spotLight.target = land;
+
+      this._scene.remove(helper);
+      helper = new THREE.SpotLightHelper(spotLight);
+      this._scene.add(helper);
     });
 
     this._clock = new THREE.Clock();
