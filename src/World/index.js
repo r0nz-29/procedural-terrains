@@ -4,9 +4,10 @@ import { createCamera } from "./camera";
 import { createRenderer } from "./renderer";
 import { resizer } from "./resizer";
 import { Loop } from "./Loop";
-import { createTerrainFBM } from "./terrain_onBeforeCompile";
+import {createTerrainFBM, createTerrain} from "./terrain_onBeforeCompile";
 import { createSky } from "./utils";
 import { GUI } from "dat.gui";
+// import {createTerrain} from "./terrain";
 
 class World {
   constructor(container) {
@@ -19,10 +20,10 @@ class World {
     this._time = 0.0;
     this._loop = new Loop(this._camera, this._scene, this._renderer);
 
-    const land = createTerrainFBM(this._time);
+    const land = createTerrain(this._time);
     land.rotation.x = -Math.PI / 2;
 
-    this._loop._needsUpdate.push(land);
+    // this._loop._needsUpdate.push(land);
 
     const sky = createSky(this._renderer);
 
@@ -34,15 +35,15 @@ class World {
       x: 0.1,
       y: 2,
       z: 0.1,
-      intensity: 10,
+      intensity: 2,
       color: 0x87532c,
     };
 
-    const spotLight = new THREE.SpotLight(sLight.color, sLight.intensity);
+    const spotLight = new THREE.DirectionalLight(sLight.color, sLight.intensity);
     spotLight.position.set(sLight.x, sLight.y, sLight.z);
     spotLight.target = land;
     this._scene.add(spotLight);
-    let helper = new THREE.SpotLightHelper(spotLight);
+    let helper = new THREE.DirectionalLightHelper(spotLight);
     this._scene.add(helper);
 
     const gui = new GUI();
@@ -58,7 +59,7 @@ class World {
       spotLight.target = land;
 
       this._scene.remove(helper);
-      helper = new THREE.SpotLightHelper(spotLight);
+      helper = new THREE.DirectionalLightHelper(spotLight);
       this._scene.add(helper);
     });
 
@@ -68,7 +69,7 @@ class World {
       spotLight.target = land;
 
       this._scene.remove(helper);
-      helper = new THREE.SpotLightHelper(spotLight);
+      helper = new THREE.DirectionalLightHelper(spotLight);
       this._scene.add(helper);
     });
 
@@ -78,7 +79,7 @@ class World {
       spotLight.target = land;
 
       this._scene.remove(helper);
-      helper = new THREE.SpotLightHelper(spotLight);
+      helper = new THREE.DirectionalLightHelper(spotLight);
       this._scene.add(helper);
     });
 
@@ -88,7 +89,7 @@ class World {
       spotLight.target = land;
 
       this._scene.remove(helper);
-      helper = new THREE.SpotLightHelper(spotLight);
+      helper = new THREE.DirectionalLightHelper(spotLight);
       this._scene.add(helper);
     });
 
