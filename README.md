@@ -10,7 +10,7 @@ Whole web application runs on React.js and is bootstrapped with `create-react-ap
 All these terrains are generated manually by altering the vertices and materials of a `Plane Mesh`, instead of pre-built objects imported from blender. 
 
 ### Terrain generated with heightmaps using glsl vertex shaders.
-demo : https://terrain-heightmap.herokuapp.com/
+demo : https://heightmap-terrain.vercel.app/
 
 ### Terrain generated with noise functions 
 demo : https://terrain-noise.herokuapp.com/
