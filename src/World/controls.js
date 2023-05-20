@@ -4,6 +4,7 @@ import {FirstPersonControls} from 'three/examples/jsm/controls/FirstPersonContro
 export const createControls = (camera, canvas, type) => {
   if(type==="orbit") {
     const controls = new OrbitControls(camera, canvas);
+    controls.autoRotate = true;
     controls.enableDamping = true;
     return controls;
   };

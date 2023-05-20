@@ -4,7 +4,7 @@ import { createCamera } from "./camera";
 import { createRenderer } from "./renderer";
 import { resizer } from "./resizer";
 import { Loop } from "./Loop";
-import {createTerrainFBM, createTerrain} from "./terrain_onBeforeCompile";
+import { createTerrain} from "./terrain";
 import { createSky } from "./utils";
 import { GUI } from "dat.gui";
 // import {createTerrain} from "./terrain";

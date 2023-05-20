@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import heightmap from "./maps/heightmaps/real14.png";
+import heightmap from "./maps/heightmaps/real2.png";
 import water from "./maps/textures/water1.jpg";
 import rock from "./maps/textures/rock.png";
 import sand from "./maps/textures/sand.jpg";
@@ -41,7 +41,7 @@ export const createTerrain = (time) => {
   };
 
   const SIZE = 4;
-  const RESOLUTION = 1000;
+  const RESOLUTION = 500;
 
   const material = new THREE.ShaderMaterial({
     lights: true,

@@ -30,8 +30,8 @@ class Loop {
 
       // //update uniforms
       this._needsUpdate.forEach((obj) => {
-        console.log(obj.material);
-        obj.material.userData.u_time.value += 0.005;
+        // console.log(obj.material);
+        obj.material.userData.u_time.value += 0.05;
       });
 
       //animate objects

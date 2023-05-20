@@ -13,13 +13,10 @@ All these terrains are generated manually by altering the vertices and materials
 demo : https://heightmap-terrain.vercel.app/
 
 ### Terrain generated with noise functions 
-demo : https://terrain-noise.herokuapp.com/
+demo : https://terrain-fbm.vercel.app/
 
-### Terrain which are Flat Shaded (Lambertian shading with custon Fragment Shader)
-demo : https://terrain-flatshaded.herokuapp.com/
-
-### Terrain which are Smooth Shaded (Gourad and Blinn shading with custom Flat Shader)
-demo : https://terrain-heightmap.herokuapp.com/
+### Flat-Shaded terrain (Lambertian shading with custom Fragment Shader)
+demo : https://terrain-flatshaded.vercel.app/
 
 ### Smooth shaded Terrain built by modifying three's default materials (using onBeforeCompile() method)
-demo : https://terrain-smoothshaded-obc.herokuapp.com/
+demo : https://terrain-obc.vercel.app/
